@@ -14,6 +14,9 @@ This assignment focused on exploring and analyzing datasets using Pandas and SQL
 - Running queries in **pandas with SQLite** to analyze real-world datasets.
 
 **Grade:** 
+- Pandas: 97/100
+  - On Question 10, I inadvertently displayed both University of Maryland schools rather than only one.
+- SQL: 100/100
 
 ---
 
