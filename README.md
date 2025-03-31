@@ -20,7 +20,7 @@ This assignment focused on exploring and analyzing datasets using Pandas and SQL
 
 ---
 
-### Homework 2: **Moral Judgment Analysis with Statistical Testing**  
+### Homework 2: **Data Exploration**  
 **Description:**  
 - Analyzed survey data from 473 students to investigate the relationship between **religiosity** and moral judgments using Python (`pandas`, `matplotlib`, `seaborn`, `scipy`).  
 - **Key Tasks**:  
@@ -40,6 +40,31 @@ This assignment focused on exploring and analyzing datasets using Pandas and SQL
 **Code Features**:  
 - Modular functions for data loading (`load_and_fix_data`), cleaning (`clean_data`), and analysis (`run_kruskal_with_bonferroni`).  
 - Automated visualization pipeline (`plot_question`) with publication-ready formatting.  
+
+**Grade**: 
+
+---
+
+### Homework 3: **Data Exploration Pt. 2**
+**Description:**  
+- Extended analysis of moral judgment surveys with additional focus on **demographic correlations** and **experimental biases**.  
+- **Key Tasks**:  
+  - **Data Integration**:  
+    - Merged datasets from 4 classes (2023–2025) while handling inconsistencies (e.g., priming questions, gender-swapped dilemmas).  
+    - Binned survey timestamps into "Morning", "Afternoon", "Evening", and "Night" categories.  
+  - **Political Belief Analysis**:  
+    - Visualized alignment between student/parent political views using **dual heatmaps** (Matplotlib/Seaborn).  
+    - Found 38.3% of students identified as "Mildly liberal" vs. 2.4% "Strongly conservative".  
+  - **Experimental Bias Testing**:  
+    - **Priming Effect**: Used **chi-squared tests** (Bonferroni-corrected) to show *no significant impact* of compassion priming on responses.  
+    - **Gender Swap**: Analyzed gender-reversed dilemmas (Q1/Q3) and found *no statistically significant differences* in judgments.  
+  - **Advanced Statistical Testing**:  
+    - Re-ran **Kruskal-Wallis tests** to confirm religiosity’s strong influence on Q7 (family duty) and Q12 (LGBTQ donation).  
+    - Tested for differences between **graduate/undergraduate students** and **time-of-day responses** – *no significant effects found*.  
+
+**Code Features**:  
+- Chi-squared contingency table generation, and automated statistical testing.  
+- Dynamic heatmap visualization for political belief comparisons (`plot_political_comparison`).  
 
 **Grade**: 
 
