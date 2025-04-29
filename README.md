@@ -41,7 +41,7 @@ This assignment focused on exploring and analyzing datasets using Pandas and SQL
 - Modular functions for data loading (`load_and_fix_data`), cleaning (`clean_data`), and analysis (`run_kruskal_with_bonferroni`).  
 - Automated visualization pipeline (`plot_question`) with publication-ready formatting.  
 
-**Grade**: 
+**Grade**: 50/50
 
 ---
 
@@ -67,6 +67,44 @@ This assignment focused on exploring and analyzing datasets using Pandas and SQL
 - Dynamic heatmap visualization for political belief comparisons (`plot_political_comparison`).  
 
 **Grade**: 
+
+---
+
+### Homework 4: **Machine Learning Project**  
+**Description:**  
+- Built models to predict **professor ratings** on **PlanetTerp** using **indirect features** (not actual ratings).  
+- **Key Tasks**:  
+  - **Data Gathering**:  
+    - Collected professor, review, and grade data via **PlanetTerp API**.  
+    - Merged professor review texts, grade distributions, and course data for 805 professors.  
+  - **Feature Engineering**:  
+    - Extracted **sentiment features** using **BERT sentiment analysis** (`bert_mean`, `bert_std`, etc.).  
+    - Calculated **word count statistics** from reviews (`wc_mean`, `wc_std`).  
+    - Created **grade-based features** (e.g., percentage of As, Bs, GPA average).  
+    - Applied **TF-IDF vectorization** and **Truncated SVD** for textual review embeddings (20 components).  
+  - **Exploratory Data Analysis**:  
+    - Visualized review counts, professor rating distributions, and grade distributions.  
+    - Generated **word clouds** for positive and negative sentiment vocabularies.  
+  - **Modeling**:  
+    - Trained and tuned 3 models:
+      - **K-Nearest Neighbors (KNN)**  
+      - **Random Forest (RF)**  
+      - **Gradient Boosting (GB)**  
+    - **Hyperparameter tuning** via **GridSearchCV** (10-fold cross-validation).  
+  - **Model Evaluation**:  
+    - Evaluated with **MSE** and **$R^2$** on test data.  
+    - Best Model: **Random Forest** with test $R^2 = 0.902$.  
+  - **Visualization**:  
+    - Created scatter plots of predicted vs. actual ratings for all models.  
+    - Compared models’ MSE and $R^2$ using barplots made using **Seaborn**.
+
+**Code Features**:  
+- Modularized feature creation for sentiment, grades, word counts, and TF-IDF embeddings.  
+- Robust API handling with concurrency for data retrieval.  
+- Clear modeling pipeline with hyperparameter optimization and scaling for KNN.  
+- Visualization tailored for presentation (publication-quality plots).  
+
+**Grade**:
 
 ---
 
