@@ -102,7 +102,34 @@ This assignment focused on exploring and analyzing datasets using Pandas and SQL
 - Modularized feature creation for sentiment, grades, word counts, and TF-IDF embeddings.  
 - Robust API handling with concurrency for data retrieval.  
 - Clear modeling pipeline with hyperparameter optimization and scaling for KNN.  
-- Visualization tailored for presentation (publication-quality plots).  
+- Visualization tailored for presentation.  
+
+**Grade**:
+
+---
+
+### Homework 5: **Image Classification Project**
+**Description:**
+- Investigated how external environmental and emotional factors influence student attendance in Professor Morawski’s Spring 2025 CMSC320 class.
+- **Key Tasks**:
+  - **Data Integration**:
+    - Combined attendance records from two class sections (202 and 69 students) with **weather data** (OpenMeteo API), **Spotify top songs** (Kaggle), and **moon illumination** (World Weather Repository).
+    - Extracted features: daily precipitation, wind speed, temperature, Spotify valence/energy scores, moon phase and illumination, and days until the next exam.
+  - **Time Series Analysis**:
+    - Applied **Augmented Dickey-Fuller test** to assess stationarity.
+    - Performed **STL decomposition** to separate attendance into trend, seasonal, and residual components.
+    - Fit **SARIMA and SARIMAX** models to forecast future attendance and evaluate predictors.
+    - Forecast showed normalized attendance would hit near-zero levels by **May 19, 2025** (after the semester).
+  - **Statistical Modeling**:
+    - Modeled attendance against weather and lunar factors using **SARIMAX** and **OLS regression**.
+    - Weather and music mood were statistically insignificant (p > 0.7).
+    - **Moon illumination initially had a p = 0.047**, but varying tests and a low \$R^2\$ of 0.05 suggested it was a likely false positive.
+   
+**Code Features**:
+- STL decomposition and SARIMA forecasting pipeline using `statsmodels`.
+- Multi-source data merging and feature engineering (`pandas`, `numpy`).
+- Statistical testing and model diagnostics (ADF, \$R^2\$, p-values).
+- Visualizations using `Seaborn` and `Matplotlib`.
 
 **Grade**:
 
