@@ -66,7 +66,7 @@ This assignment focused on exploring and analyzing datasets using Pandas and SQL
 - Chi-squared contingency table generation, and automated statistical testing.  
 - Dynamic heatmap visualization for political belief comparisons (`plot_political_comparison`).  
 
-**Grade**: 
+**Grade**: 32/32
 
 ---
 
@@ -104,7 +104,8 @@ This assignment focused on exploring and analyzing datasets using Pandas and SQL
 - Clear modeling pipeline with hyperparameter optimization and scaling for KNN.  
 - Visualization tailored for presentation.  
 
-**Grade**:
+**Grade**: 125/100
+- 25 points of extra credit
 
 ---
 
@@ -131,7 +132,8 @@ This assignment focused on exploring and analyzing datasets using Pandas and SQL
 - Statistical testing and model diagnostics (ADF, \$R^2\$, p-values).
 - Visualizations using `Seaborn` and `Matplotlib`.
 
-**Grade**:
+**Grade**: 110/100
+- 10 points of extra credit
 
 ---
 
